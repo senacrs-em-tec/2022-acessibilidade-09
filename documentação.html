@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Peaky Blind</title>
+</head>
+<body>
+    
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+
+
+
+    <header>
+        <a href="#" class="titulo" aria-label="Selecione para voltar à página inicial"><strong>Peaky Blind</strong></a>
+        <nav>
+          <a  href="index.html" aria-label="Voltar a pagina inicial"><strong>Pagina Inicial </strong></a>
+          
+        </nav>
+    </header>
+    <main>
+
+      <section class="paragrafo">
+        <h1 tabindex="0"><strong>Tabindex</strong></h1>
+      <p tabindex="0"> Tendo em vista que as pessoas com deficiência visual utilizam a tecla tab para navegar em sites, nos utilizamos o atributo do html tabindex. Caso um componente tenha seu tabindex igual a 0, ele pode ser selecionado pela tecla. </p>
+
+      <div class="container">
+        <code tabindex="0" class="codigo">
+          &lt;footer&gt;</br>
+        &lt;a href=&quot;#&quot; tabindex=&quot;0&quot;&gt;Inicio&lt;/a&gt;</br>
+        &lt;p tabindex=&quot;0&quot;&gt;Arthur Costa, Arthur da Silva, Davi Cunda e Fernando Campanaro&lt;/p&gt;</br>
+    
+    &lt;/footer&gt;
+          
+
+        </code>
+
+      </div>
+        
+            <p tabindex="0"> Números acima de 0 são usados para definir a ordem em que os componentes serão selecionados, do contrário o navegador irá definir automaticamente (de cima para baixo e da esquerda para a direita).</p>
+
+            <div class="container">
+              <code tabindex="0" class="codigo">
+                &lt;header&gt;
+        &lt;a href=&quot;#&quot; class=&quot;titulo&quot; tabindex=&quot;1&quot; aria-label=&quot;Selecione para voltar &#224; p&#225;gina inicial&quot;&gt;&lt;strong&gt;Peaky Blind&lt;/strong&gt;&lt;/a&gt;</br>
+        &lt;nav&gt;</br>
+          &lt;a  href=&quot;#oque&quot; aria-label=&quot;Selecione para ir ao paragrafo O que &#233;&quot;&gt;&lt;strong&gt;O que &#233;</br>?&lt;/strong&gt;&lt;/a&gt;</br>
+          &lt;a  href=&quot;#causa&quot; aria-label=&quot;Selecione para ir ao paragrafo Alternativas&quot;&gt;&lt;strong&gt;</br>Alternativas&lt;/strong&gt;&lt;/a&gt;</br>
+          &lt;a  href=&quot;#fontes&quot; aria-label=&quot;Selecione para ir &#224;s fontes&quot;&gt;&lt;strong&gt;Fontes&lt;/strong&gt;</br>&lt;/a&gt;</br>
+          &lt;a  href=&quot;documenta&#231;&#227;o.html &quot; aria-label=&quot;Selecione para ir &#224; documenta&#231;&#227;o&quot;&</br>gt;&lt;strong&gt;Documenta&#231;&#227;o&lt;/strong&gt;&lt;/a&gt;</br>
+        &lt;/nav&gt;</br>
+    &lt;/header&gt;
+                
+      
+              </code>
+      
+            </div>
+
+            <h1 tabindex="0"><strong>Title e alt text</strong></h1>
+          
+            
+            <p tabindex="0">Pessoas que possuem deficiência visual utilizam leitores de tela, porem esses leitores não são capazes de descrever uma imagem para o usuário por isso utilizamos o atributo Alt text. Esse atributo é utilizado para definir o texto que será lido pelo leitor de tela. </p>
+          
+
+            
+            <p tabindex="0">Para utilizar o alt text basta escrever ‘alt= “ “’  depois do link da imagem e digitar dentro das aspas a descrição desejada.</p>
+
+            <div class="container">
+              <code tabindex="0" class="codigo">
+                alt=&quot;Imagem de uma mulher cega com seu cachorro guia se divertindo no parque.&quot;
+
+              </code>
+
+            </div>
+
+            <p tabindex="0">Como alguns navegadores não reconhecem esse atributo, é necessário utilizar também o atributo tilte que, nesse caso, funciona da mesma maneira.</p>
+
+            <div class="container">
+              <code tabindex="0" class="codigo">
+                title=&quot;Imagem de uma mulher cega com seu cachorro guia se divertindo no parque.&quot;
+
+              </code>
+
+            </div>
+
+            <h1 tabindex="0"><strong>Aria-label</strong></h1>
+
+            <p tabindex="0">Muitas vezes, queremos que o leitor de tela leia algo diferentes do que está visível para usuários que não o utilizam. Nesse caso, utilizamos o atributo aria-label. Esse atributo funciona como um alt-text, mas que pode ser utilizado em qualquer elemento da página, enquanto o anterior só irá funcionar em imagens. 
+
+              Para utilizar esse elemento, basta escrever ‘aria-label=” ”’ e digitar o texto desejado dentro das aspas.</p>
+
+              <div class="container">
+                <code id="texto" tabindex="0" class="codigo">
+                  &lt;a  href=&quot;#oque&quot; aria-label=&quot;Selecione para ir ao paragrafo O que &#233;&quot;&gt;&lt;strong&gt;O que &#233;?&lt;/strong&gt;&lt;/a&gt;</br>
+          &lt;a  href=&quot;#causa&quot; aria-label=&quot;Selecione para ir ao paragrafo Alternativas&quot;&gt;&lt;strong&gt;Alternativas&lt;/strong&gt;&lt;/a&gt;</br>
+          &lt;a  href=&quot;#fontes&quot; aria-label=&quot;Selecione para ir &#224;s fontes&quot;&gt;&lt;strong&gt;Fontes&lt;/strong&gt;&lt;/a&gt;</br>
+          &lt;a  href=&quot;documenta&#231;&#227;o.html &quot; aria-label=&quot;Selecione para ir &#224; documenta&#231;&#227;o&quot;&gt;&lt;strong&gt;Documenta&#231;&#227;o&lt;/strong&gt;&lt;/a&gt;
+  
+                </code>
+  
+              </div>
+
+            <p tabindex="0">Nesse caso, os botões do cabeçalho não terão somente seu nome lido, e darão uma descrição mais apropriada e útil para usuários de leitor de tela. </p>
+
+            <h1 tabindex="0">Aviso:</h1>
+            <p tabindex="0">Em alguns casos, os leitores de tela também lerão as tags do componente demonstrado isso é um comportamento do próprio programa e, em alguns casos, ajuda usuário a se situar na página. </p>
+
+
+
+
+
+
+    </section>
+
+        
+
+
+    </main>
+
+    <footer>
+        <a href="#" tabindex="0" aria-label="Voltar ao inicio da página">Inicio</a>
+        <p tabindex="0">Realizadores: Arthur Costa, Arthur da Silva, Davi Cunda e Fernando Campanaro</p>
+    
+    </footer>
+</body>
+</html>
